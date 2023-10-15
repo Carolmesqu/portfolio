@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* Para dar um reset no CSS usamos o * que pega todos os elementos que existem na página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* No height utilizamos vh que é a alturar do noss viewport, o tamanho da tela que está visualizando, no caso 100% */
+    height: 100vh;
+    /* Para as tags filhos não sairem da tela, o border-sizing, border-box funciona pra encolher o elemente e manter dentro do pai */
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #E3CDC1; 
+}
+
+/* Classe no CSS */
+.titulo-destaque {
+    color: #C28472;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    /* Para deixar o conteúdo que está dentro do pai flexivel para qualquer tela usamos o flex  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aprensentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aprensentacao__links__link {
+    background-color: #C28472;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
